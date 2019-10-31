@@ -25,7 +25,7 @@ public class VtnHome extends javax.swing.JFrame
     int xy, xx;
     static Connection con = null;
     public static int nivel_usaurio = 0;
-    public ArrayList<Object> columnaMap1 = new ArrayList();
+    public ArrayList<Object> columnaMap1 = new ArrayList<Object>();
     Querys q;
 
     /**
