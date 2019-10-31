@@ -314,12 +314,6 @@ public class VtnHome extends javax.swing.JFrame
                 if (columnaMap1.get(9).equals("3"))
                 {
                     Sesion.datosUsuario = columnaMap1;
-                    new VtnGSPrincipal().setVisible(true);
-                    this.dispose();
-                }
-                if (columnaMap1.get(9).equals("4"))
-                {
-                    Sesion.datosUsuario = columnaMap1;
                     new VtnEPrincipal().setVisible(true);
                     this.dispose();
                 }
