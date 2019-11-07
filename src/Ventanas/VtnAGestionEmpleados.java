@@ -411,7 +411,7 @@ public class VtnAGestionEmpleados extends javax.swing.JFrame
 
         jCBTipoEmple.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jCBTipoEmple.setForeground(new java.awt.Color(139, 157, 195));
-        jCBTipoEmple.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GerenteA", "GerenteB", "Vendedor" }));
+        jCBTipoEmple.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente", "Vendedor" }));
         jCBTipoEmple.setBorder(null);
         jCBTipoEmple.addKeyListener(new java.awt.event.KeyAdapter()
         {
@@ -630,15 +630,12 @@ public class VtnAGestionEmpleados extends javax.swing.JFrame
 
     public int evalua(int valor)
     {
-        if (String.valueOf(jCBTipoEmple.getSelectedItem()).equals("GerenteA"))
+        if (String.valueOf(jCBTipoEmple.getSelectedItem()).equals("Gerente"))
         {
             valor = 2;
-        } else if (String.valueOf(jCBTipoEmple.getSelectedItem()).equals("GerenteB"))
-        {
-            valor = 3;
         } else if (String.valueOf(jCBTipoEmple.getSelectedItem()).equals("Vendedor"))
         {
-            valor = 4;
+            valor = 3;
         }
         return valor;
     }
